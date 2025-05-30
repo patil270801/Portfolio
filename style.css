@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.protfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navlist {
+    display: flex;
+    gap: 2rem;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: #262525;
+    z-index: 1000;
+    padding: 0 2rem;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navlist li a:hover {
+    color: yellow;
+}
+
+.left-container, .right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: linear-gradient(-45deg, #3877ff, #262525 70%);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content .intro {
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
+
+.content.intro span {
+    color: #5db9ee;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #5db9ee;
+}
+
+.detail {
+    font-size: 0.8rem;
+    color: aliceblue;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button {
+    border: 0.1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.button:nth-child(1) {
+    background: #5db9ee;
+    color: #262525;
+}
+
+.button:nth-child(2) {
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+
+.button:nth-child(1):hover {
+    background: transparent;
+    color: #5db9ee;
+}
+
+.button:nth-child(2):hover {
+    background: #5db9ee;
+    color: #262525;
+}
+
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons .icon {
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons .icon i {
+    font-size: 1.5rem;
+    color: #262525;
+}
+
+.social-icons .icon:hover {
+    background: linear-gradient(45deg, #3877ff, #262525);
+    box-shadow: 0 0 10px #3877ff;
+    transform: scale(1.1);
+}
+
+.social-icons .icon i:hover {
+    color: #fff;
+}
+
+.design.circle {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 70%;
+    background: linear-gradient(45deg, #3877ff, #262525);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #3877ff, 0 0 30px #262525;
+
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle-inner {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 70%;
+    background-image: url("image/profile.jpg");
+    background-image: url("image/Screenshot_2024-07-20-10-46-49-61_99c04817c0de5652397fc8b56c3b3817\ \(1\)\ -\ Copy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    box-shadow: 
+        0 0 1rem #fff,
+        0 0 2rem #3877ff,
+        0 0 4rem #3877ff;
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("image/Screenshot_2024-07-20-10-46-49-61_99c04817c0de5652397fc8b56c3b3817\ \(1\)\ -\ Copy.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1rem solid white ;
+    box-shadow: 
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877ff;
+
+}*/
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+
+}
+.navlist li a:hover::after, .navlist.active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left ;
+}
